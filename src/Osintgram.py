@@ -374,7 +374,8 @@ class Osintgram:
             with open(json_file_name, 'w') as f:
                 json.dump(json_data, f)
 
-        print(t)
+        #print(t) -- I manually commented this out and added a return statement so I can use the list myself (2023/11/09)
+        return followers
 
     def get_followings(self):
         if self.check_private_profile():
@@ -439,7 +440,8 @@ class Osintgram:
             with open(json_file_name, 'w') as f:
                 json.dump(json_data, f)
 
-        print(t)
+        #print(t) -- I manually commented this out and added a return statement so I can use the list myself (2023/11/09)
+        return followings
 
     def get_hashtags(self):
         if self.check_private_profile():

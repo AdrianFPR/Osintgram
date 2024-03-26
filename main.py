@@ -117,7 +117,7 @@ parser.add_argument('-o', '--output', help='where to store photos', action='stor
 
 args = parser.parse_args()
 
-
+print(f'target={args.id}, is_file={args.file}, is_json={args.json}, is_cli={args.command}, output_dir={args.output}, clear_cookies={args.cookies}')
 api = Osintgram(args.id, args.file, args.json, args.command, args.output, args.cookies)
 
 
